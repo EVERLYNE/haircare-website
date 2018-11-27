@@ -1,0 +1,142 @@
+body{
+	background-color: grey;
+	text-align:center;
+	color:white;
+	min-height: 2000px;
+
+
+}
+
+h1{
+
+    color:white;
+}
+h2{
+    color:yellow;
+    letter-spacing: 2px;
+}
+h3{
+	background-color: yellow;
+	padding: 35px;
+	margin: 0 auto;
+	height:29px;
+}
+
+.header-text{
+	background-color: #2f4351;
+	padding: 30px;
+
+}
+
+.content{
+	background-color: #3b5367;
+	margin: 0 auto;
+
+	padding: 30px;
+}
+
+.content1{
+	background-color: yellow;
+	width:1200x;
+	height: 100px;
+	color: black;
+	margin: auto 150px ;
+	font-size: large;
+	text-align:left;
+
+
+}
+.text{
+	background-color:white;
+	height:280px;
+	padding:35px;
+
+
+}
+.content2{
+	width:1000px;
+	height:300px;
+	margin:0 auto;
+	margin-top :20px;
+}
+ .top h4{
+	background-color:yellow;
+	padding:0;
+	margin:0;
+	
+
+}
+
+
+
+.top{
+	background-color:white;
+	width:490px; 
+	height:400px;
+	float:left;
+}
+.bottom{
+	background-color:white;
+	width:490px;
+	height:400;
+	float:right;
+
+}
+.bottom h4{
+	background-color:yellow;
+	width:490px;
+	padding:0;
+	margin:0;
+}
+.content3 table{
+	
+	border-collapse:collapse;
+	border:1px solid #666;
+	width:100%;
+	background-c
+    color:#ccc;
+	height:200px;
+
+}
+.content3 th{
+	background-color:#f7ce06 ;
+	padding: 10px;
+
+}
+.content3 tr{
+	background-color: white;
+	color:black;
+	border-bottom: 1px solid;
+	padding: 10px;
+}	
+
+.content3 tr td{
+	border-right:1px solid;
+	text-align: center;
+}
+/*.content4{
+	background-color:blue: 
+}
+.content5{
+	color:yellow;*/
+}
+/*.akothe{
+	background-color:#2f4351;
+	width:1000px;
+	height:800px;
+	margin:0 auto;
+	padding:35px; 
+	
+}*/
+
+footer{
+	background-color:#2f4351;
+	width:1000px;
+	height:800px;
+	margin:0 auto;
+	padding:35px;
+
+
+
+
+

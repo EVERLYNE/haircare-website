@@ -1,0 +1,73 @@
+body {
+    background-image: url(../image/Avengers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:purple;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+header{
+	width: 90%;
+	color : white;
+	margin-top: 200px;
+	font-size: 125px;
+	position: absolute;
+
+
+	
+
+
+
+}
+h1{
+	color: black;
+	text-align: center;
+	position: relative;
+	top: 400px;
+}
+.main{
+	
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	overflow: hidden;
+	padding: 50px;
+	
+	
+	
+  
+	
+}
+.main li{
+	display: inline-block;
+
+}
+.main li a:hover{
+	background-color: red;
+	transition:all-ease-in-out;
+
+}
+.main li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 18px;
+}
+footer{
+	background-color: red;
+	width:1600px;
+	height:80px;
+	position:relative;
+	top:500px;
+	text-align: center;
+	color:white;
+	font-size:30px;
+
+}
+
+

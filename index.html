@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	single page website online salon service</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	*{
+		margin:0px;padding: 0px;font-family: sans-serif;
+	}
+	nav{
+		width: 100%;height:80px;background-color: #222323;color: #fff;position:fixed;z-index: 100;
+	}
+	nav ul{
+		list-style: none;text-align: right;
+	}
+	nav ul li{
+		display: inline-block;text-align: center;height:60px;line-height: 80px;width: 130px;position: relative;font-size: 10pt;text-transform: uppercase;bottom: 115px
+	}
+	nav ul li a{
+		text-decoration: none;color:#fff;display: block;
+	}
+	nav ul li a:hover::before{
+		content:'';
+		border:15px solid #C7367E;
+		position: absolute;
+		left:0px;top: 0px;right: 0px; 
+		border-color: transparent  transparent #C7367E  transparent;     transform: rotate(180deg);
+		top:-10px;
+	}
+	nav ul li a:hover::after{
+		content:'';
+		border:15px solid pink;
+		position: absolute;
+		left:0px;bottom: 0px;right: 0px;
+		border-color:#C7367E  transparent transparent transparent ;     transform: rotate(180deg);
+		bottom: -10px;
+	}
+	nav h3{
+		height: 60px;line-height: 60px;margin-left: 20px;float:left;font-size: 18pt;text-shadow: 1px 1px 5px #000;position: relative;bottom: 105px;left:90px;
+	}
+	nav h3 span:first-child{
+		/*color:pink;border-top:4px solid pink; */
+		color:#C7367E;
+		/*text-transform: lowercase;
+*/
+	}
+	nav h3 span:last-child{
+	/*border-bottom: 4px solid #fff; */
+	color:#C7367E;
+	/*text-transform: lowercase;*/
+	left: 30px;
+     }
+	.home div{
+		width: 450px;height: 200px;position: absolute;top:0px;left:0px;right:0px;bottom: 0px;margin: auto;text-align: center;color:#fff;text-shadow: 1px 1px 5px #000;line-height: 1.5
+	}
+	.home{
+		width: 100%;height: 600px;background-image: url('image/saloon1.jpg');background-size: 100%auto;padding-top:60px;background-position: 0px 55px;
+	}
+	.about{
+		width: 100%;height: 550px;padding-top:70px;
+	}
+	.about h2,.services h2,.gallery h2,.team h2,.contact h2{
+		height: 80px;text-align: center;line-height: 80px;font-size: 18pt;text-transform: uppercase;
+	}
+	.home div h1{
+		font-size: 60pt;
+
+	}
+	.home div h2{
+		font-size: 12pt;letter-spacing: 2px;
+
+	}
+	.home div h3{
+		font-size: 12pt;height: 50px;line-height: 50px;width: 150px;text-align:center;margin:auto;border:2px solid #fff;font-weight: normal;letter-spacing: 1px;margin-top: 60px; transition: background-color 0.7s linear
+
+	}
+	.home div h3:hover{
+		background-color: pink;color:#222;text-shadow: 0px 0px 0px #000;
+		}
+	.about div{
+		width: 90%;margin: auto;text-align: justify;line-height: 1.8;box-shadow: 0px 0px 10px #222;padding: 30px;
+	}
+	.about div img{
+		width: 450px;border: 5px solid #fff;float:left;margin-right: 20px;
+	}
+	.about div span{
+		display: block;text-align: right;font-size: 12pt;color: #06A0CC; font-weight: bold;
+	}
+	.services{
+		width: 100%;height: 500px;padding-top: 90px;
+	}
+	.services .services-row,.gallery .gallery-row{
+		width:95%;margin: auto;height: 450px;display: flex;text-align: center; 
+	}
+	.services .services-row .services-item{
+		width:25%;margin: auto;height: 400px;box-shadow:0px 0px 5px rgba(0,0,0,0.5);transition: background-color 1s linear;bottom: 20px;border-radius:  50px 0px 50px 0px
+    }
+	.services .services-row .services-item img{
+		width:90%;margin: auto;height: 230px;padding-top: 20px;border-radius:  50px 0px 50px 0px
+    }
+   
+    .services .services-row .services-item:hover{
+	 	background-color: #222;color#fff;
+     }
+    .services h4{
+    	font-size: 15px
+    	font-family:arial;
+    	bottom: 10px;
+
+    }
+    .gallery{
+		padding-top: 120px;
+	}
+	.gallery .gallery-row{
+		width:95%;margin: auto;height: 280px;display: flex;text-align: center; 
+	}
+	.gallery .gallery-row .gallery-item{
+		width: 350px;height: 250px;padding: 5px 10px;box-shadow: 1px 1px 10px #222;margin: 15px;
+		border-radius:  50px 0px 50px 0px
+
+	}.gallery-item h2{
+		font-size:12pt;padding-top: 10px;line-height: 1.8 
+
+	}
+   .gallery-item img{
+		width: 95%;height: 170px;border-radius:  50px 0px 50px 0px
+
+	}
+	.gallery-item:hover{
+		background-color: pink   ;color:#fff;
+
+	}
+	.team{
+		padding: 90px;
+	}
+
+	.team .team-row{
+		width:95%;margin: auto;height: 400px;display: flex;text-align: center; 
+	}
+	
+	.team-item{
+		width: 30%;height: 370px;box-shadow:0px 0px 5px rgba(0,0,0,0.5);margin: 10px 10px;padding: 10px;
+
+	}
+	.team-item img{
+		width: 80%;height: 270px;border-radius: 50%; object-fit:cover; 
+
+    }
+    .team h3{
+    	font-size: 23px;
+    
+    }
+	.team-item:hover{
+		background-color:pink;color: #fff
+	}
+	.contact{
+		padding-top: 80px;background-color:#f3f3f3;background-position: 0px 90px;background-size: 100%;background-repeat: no-repeat;
+	}
+	.contact-row{
+		width: 100%;height: 480px;display:flex; 
+	}
+	.contact-map{
+		width: 600px;height: 400px;border:5px solid #ccc;margin-left: 40px;
+	}
+	.contact-form{
+		width: 400px;height: 400px;margin-left:80px;
+	}
+	
+	.contact-form table{
+		width: 100%;height: 400px;margin-left: 80px;text-align: center;
+	}
+    
+	.contact-form table tr:first-child{
+		height: 40px;margin: 10px 0px;border: 1px solid #222;font-size: 14pt;text-transform: uppercase;background-color: #222323;color: #fff;border-radius: 50px; 
+	}
+	
+	.contact-form table tr td input{
+		width: 100%;height: 40px;margin: 5px 0px;border: 1px  solid #222;/*border-radius: 40px;*/
+	}
+   .contact-form table tr td textarea{
+		width: 100%;height: 100px;margin: 10px 0px;border: 0.5px  solid #222;
+	}
+   .contact-form table tr td input[type='submit']{
+		width: 60%;height: 40px;margin: 10px 0px;background-color: #C7367E;color: #fff;text-align: center;border-radius: 50px;
+	}
+	footer{
+		width: 100%;height: 150px;line-height: 60px;text-align: center;background-color:#222;color: #ccc;font-size: 12pt; 
+	}
+	.lime img{
+		width:120px;
+		position:relative;
+		right:1370px;
+		bottom: 10px; 
+	}
+	.button{  
+	width: 100%;
+	height: 100px;
+}
+#myBtn{
+	display: none; 
+    position: fixed; 
+    bottom: 40px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: #C7367E; 
+    color: white; 
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
+}
+#myBtn:hover {
+    background-color: #555;
+}
+body{
+	background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: lightgrey;
+    }
+}	
+</style>
+
+</head>
+<body>
+	<nav>
+
+	<ul>
+		<div class="lime">
+			<img src="image/logs.png">
+			
+		</div>
+		<h3><span> Hair</span><span> Care</span></h3>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#about us">About us</a></li>
+	<li><a href="#services">Services</a></li>
+	<li><a href="#gallery">Gallery</a></li>
+	<li><a href="#team">Team</a></li>
+	<li><a href="#contact">Contact</a></li>
+
+	</ul>	
+	</nav>
+
+	<section class="home" id="home">
+		<div>
+			<h1>HAIR CARE</h1>
+			<h2>online salon service</h2>
+			<!-- <h3> LEARN MORE</h3> -->
+		</div>
+	</section><br><br><br><br>
+	<section class="about us" id="about us">
+		
+		<div>
+			<h2>About us</h2>
+			<img src="image/photo.jpg">
+			Hair care is a combination of three ladies:Evelyne Akoth, Feliciah Mtoka and Jane lodipo.As hair care we believe that everything is interconnected, from the work we do, to the earth we live on and to the salons we serve. Thats why we decided to serve the salon community which has experienced the problem of long queues in most of their salons due to the messy appointments they make from their customers on a daily basis.<br><br>When you are here, you are treated as part of our family-because you are!. We strive to make hair care your home away from home through creating a culture of love and positivity. This means that when you use our hair care application, you will be warmly treated by our passionate salonists, offered complimentary salon service that will make you feel relaxed and beautiful.<br><br>The word hair care therefore  is a sanskript for knowledge and wisdom, and we take it to heart. The salons we work with takes in pride in being highly trained  by the best in beauty and wellness  the industries have to offer. And above all, the salonists are passionate about what they do and why they do it.When you are here, you"ll feel loved.
+			Our goal as hair care group is therefore to be a profitable business and help our customers who will be using our application to spend less time when they go to their respective salons.<br><br>
+
+<span>Online salon service</span>
+
+		</div>
+	</section>
+	<section class="services" id="services">
+		<h2> Services</h2>
+		<div class="services-row">
+			<div class="services-item"><br><br>
+				<img src="image/manicure.png"><br><br>
+				<h3>MANICURE</h3><br>
+				<h4>This service ranges from 1000/= to 1200</h4>
+				
+			</div>
+			<div class="services-item"><br><br>
+				<img src="image/pedicure2.jpg"><br><br>
+				<h3>PEDICURE</h3><br>
+				<h4>This service ranges from 1000/= to 1200 </h4>
+				
+			</div>
+			<div class="services-item"><br><br>
+				<img src="image/braids.jpg"><br><br>
+				<h3>BRAIDS</h3><br>
+				<h4>This service ranges from 1000/= to 1200</h4>
+				
+			</div>
+			
+		
+		<div class="services-item"><br><br>
+				<img src="image/maki.jpg"><br><br>
+				<h3>MAKE UP</h3><br>
+				<h4>This service ranges from 1000/= to 1200</h4>
+				
+			</div>
+		</div>
+			<!-- <div class="services-item">
+				<img src="image/maa.jpg">
+				<h2>massage</h2>
+				<h4>HTML, CSS, JavaScript andjQuery</h4>
+				
+			</div>
+			 -->
+		
+			
+		</div>
+	</section>
+	<section class="gallery" id="gallery">
+		<h2>Gallery  /  more of the services</h2>
+		<div class="gallery-row">
+			<div class="gallery-item"><br><br>
+				<img src="image/curl.jpg">
+				<h2>curl</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/color jpg.jpg">
+				<h2>color</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/weave.jpg">
+				<h2>weave</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/shampoo.jpg">
+				<h2>shampoo</h2>
+				
+			</div>
+			
+			
+			
+		</div>
+		<div class="gallery-row">
+			<div class="gallery-item"><br><br>
+				<img src="image/facial.jpg">
+				<h2>facial treatment</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/condtioning.jpg">
+				<h2>Hair conditioning</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/massage.jpg">
+				<h2>Body massage and waxing</h2>
+				
+			</div>
+			
+			<div class="gallery-item"><br><br>
+				<img src="image/gel ap.jpg">
+				<h2>Gel application</h2>
+				
+			</div>
+			
+			
+			
+		</div>
+				
+	</section>
+	<section class="team" id="team">
+			<h2>OUR TEAM</h2>
+		<div class="team-row">
+			<div class="team-item">
+				<img src="image/IMG-20180719-WA0004.jpg">
+				<h3>Backend Developer</h3>
+				<h4>Felicia Mtoka</h4>
+				
+			</div>
+			
+			<div class="team-item">
+				<img src="image/IMG_20181014_125549.jpg">
+				<h3>Graphic Designer</h3>
+				<h4>Evelyne Akoth</h4>
+				
+			</div>
+			
+			<div class="team-item">
+				<img src="image/20180119_111127-1 (1).jpg">
+				<h3>Frontend Developer</h3>
+				<h4>Jane Lodipo</h4>
+
+				
+			</div>
+			
+			</div>
+		
+	</section>
+	<section class="contact" id="contact">
+		<h2>contact us</h2>
+		<div class="contact-row">
+			<div class="contact-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7931768000913!2d36.78860221399644!3d-1.2988610990526461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109997354b97%3A0xe54a131abd8ebdb2!2sAkirachix!5e0!3m2!1sen!2ske!4v1539953761102" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
+			</div>
+			<div class="contact-form">
+				<form action="/action_page.php">
+			<table>
+				<tr>
+					<td>contact us</td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Enter Your Name"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Enter Your mail Id"></td>
+				</tr>
+				<tr>
+					<td><textarea placeholder="Enter Your Message"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</table>
+		    </form>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<h4>(©)copy;By online salon service 2018</h4>
+		
+	
+<div class="button">
+	 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	</div>
+	<script>// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 50) {
+					document.getElementById("myBtn").style.display = "block";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+			
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0; // For Safari
+				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			}
+
+	</script>
+</footer>
+</body>
+
+</html>

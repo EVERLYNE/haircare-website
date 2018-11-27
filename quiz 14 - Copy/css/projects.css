@@ -1,0 +1,188 @@
+/*body {
+    /*background-image: url(../image/Avengers.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:purple;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+header{
+	width: 90%;
+	color : red ;
+	text-align: center;
+	margin-top: 200px;
+	font-size: 125px;
+	position: absolute;
+
+
+	
+
+
+
+}
+h1{
+	color: yellow;
+	text-align: center;
+	position: relative;
+	top: 400px;
+}
+.main{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	overflow: hidden;
+	padding: 50px;
+	
+	
+
+	
+}
+.main li{
+	display: inline-block;
+
+}
+.main li a:hover{
+	background-color: red;
+	transition:all-ease-in-out;
+
+}
+.main li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 18px;
+}
+
+img{
+	float:left;
+	margin-top: 150px;
+
+}
+.donkey{
+	color:white;
+	position:relative;
+	top:120px;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.kothee{
+	color:red;
+	position:relative;
+	top:1800px;
+	font-size: 20px;
+	text-decoration: underline;
+	right: :100px;
+	text-align: center;
+
+
+}
+.eve img{
+	position:relative;
+	left:50px;
+	bottom:35px;
+}
+.rabbit img{
+	position: relative;
+	left:100px;
+	bottom: 150px;
+
+}
+.kawaai img{
+	position: relative;
+	left: 150px;
+	bottom: 150px
+
+}
+.lebron img{
+	position:relative;
+	bottom: 280px;
+}
+.fruit img{
+	position: relative;
+	left:50px;
+	bottom:280px;
+
+}
+.face img{
+	position: relative;
+	left:100px;
+	bottom:280px;
+
+}
+.rita img{
+	position:relative;
+	bottom: 300px;
+
+}
+.orah{
+	color:white;
+	position:relative;
+	top:800px;
+	font-size: 20px;
+	text-decoration: underline;
+	right: :100px;
+
+}
+.benadril img{
+	position:relative;
+	left:50px;
+	bottom:300px;
+}
+.rita2 img{
+	position: relative;
+	left:100px;
+	bottom: 300px;
+
+
+
+}
+.newspaper2{
+	position:relative;
+	bottom: 400px;
+
+
+}
+.newspaper3{
+	position:relative;
+	left:100px;
+	bottom:400px;
+
+}
+.phone{
+	position: relative;
+	left:150px;
+	bottom: 400px;
+
+
+
+}
+.cate img{
+	position:relative;
+	bottom: 350px;
+
+}
+.closeup{
+	color:white;
+	position:relative;
+	top:1800px;
+	font-size: 20px;
+	text-decoration: underline;
+	right: :100px;
+}
+.rihana img{
+	position:relative;
+	left:50px;
+	bottom:2150px;
+
+}
+.diamond img{
+	position:relative;
+	bottom: 2250px;
+
+
+*/

@@ -1,0 +1,42 @@
+body{
+	background-color: #d3c4a3;
+	text-align:center;
+
+}
+.header-text{
+		background:#cca65d;
+	     padding:30px;
+	     text-align:left;	
+	}
+	
+	
+
+
+h1{
+	text-align: left;
+}
+h2{
+	text-align: right;
+}
+
+div{
+       text-align:center;
+   }   
+
+.content{
+		
+         width :1000px;
+         min-height:500px;
+         padding:30px;
+         color:black;
+         text-align:center ;
+         margin:0 auto;
+         background-color:#ffffff;
+
+	}
+    
+     footer{
+     	background-color:#413827;
+     	padding:30px;
+     	text-align: center;
+     }
